@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid, Flexbox & Image Gallery</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-4">
+  <header class="bg-blue-500 text-white p-4">
+    <h1 class="text-3xl">Grid, Flexbox & Image Gallery</h1>
+  </header>
+
+  <main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4">
+    <section class="lg:col-span-2 flex flex-col md:flex-row gap-4">
+      <div class="w-full md:w-1/2 bg-red-200 p-4">Flexbox Item 1</div>
+      <div class="w-full md:w-1/2 bg-red-400 p-4">Flexbox Item 2</div>
+    </section>
+    <aside class="bg-green-200 p-4">Sidebar</aside>
+
+    <!-- Image Gallery Section -->
+    <section class="lg:col-span-3 mt-6">
+      <h2 class="text-2xl font-bold mb-4">Image Gallery</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Nature" class="w-full h-48 object-cover rounded-lg">
+        <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" alt="Architecture" class="w-full h-48 object-cover rounded-lg">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Technology" class="w-full h-48 object-cover rounded-lg">
+        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91" alt="People" class="w-full h-48 object-cover rounded-lg">
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Food" class="w-full h-48 object-cover rounded-lg">
+        <img src="https://images.unsplash.com/photo-1601758123927-196d5f40a6f4" alt="Animals" class="w-full h-48 object-cover rounded-lg">
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-white p-4 mt-4">
+    <p>&copy; 2024 Olusegun Banji's Blog</p>
+  </footer>
+</body>
+</html>
